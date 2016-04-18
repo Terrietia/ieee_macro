@@ -1,10 +1,10 @@
 Sub body_macro()
 '
 ' AUTHOR: Matthew Valuet
-' DESCRIPTION: ieee macro for the body text of a two col doc
+' DESCRIPTION: Macro for formatting body text for IEEE two column document
 ' DATE: 11 April 2016
 '
-' Setting IEEE two column body margins.
+' Setting page margins.
 With ActiveDocument.PageSetup
     .TopMargin = InchesToPoints(0.75)
     .BottomMargin = InchesToPoints(1)
@@ -12,7 +12,7 @@ With ActiveDocument.PageSetup
     .RightMargin = InchesToPoints(0.63)
 End With
 '
-' Setting selected paragraph formatting.
+' Setting paragraph formatting.
 With ActiveDocument.Paragraphs
     .Alignment = wdAlignParagraphJustify
     .LineSpacingRule = wdLineSpaceMultiple
